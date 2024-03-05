@@ -163,9 +163,7 @@ $g = mysqli_fetch_array($query);
                                     Message Center
                                 </h6>
                                 <div class="font-weight-bold">
-                                    <div class="text-truncate">
-                                        <?php include 'notif.php'; ?>
-                                    </div>
+                                    
                                 </div>
                             </div>
                         </li>
@@ -322,7 +320,7 @@ $g = mysqli_fetch_array($query);
                             </div>
                         </div>
 
-                        <?php include 'notifikasi.php'; ?>
+                       
 
                     </div>
                     <!-- End of Main Content -->
