@@ -62,8 +62,6 @@
                                     <input type="password" class="form-control form-control-user"
                                         placeholder="Enter your Password.." name="password" id="password"
                                         aria-label="Recipient's username" aria-describedby="button-addon2" required>
-                                    <button class="btn btn-outline-secondary" type="button" id="button-addon2"><i
-                                            class="fa fa-eye"></i></button>
                                 </div>
                                 <div class="form-group">
                                     <button type="submit" class="btn btn-primary btn-user btn-block">Register</button>
