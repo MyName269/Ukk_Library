@@ -17,14 +17,7 @@ if ($query > 0) {
     document.location.href = 'buku1.php';
     </script>";
 } else {
-    // cek apakah user telah mengembalikan buku jika statuspeminjaman 'telat(3)'?
-    $telat = mysqli_query($koneksi, "SELECT statuspeminjaman FROM riwayat_peminjam WHERE statuspeminjaman='3' AND userid = '$userid'");
-    if (mysqli_fetch_assoc($telat)) {
-        echo "<script>
-    alert('Harap kembalikan dahulu buku yg anda pinjam!');
-    </script>";
-        echo "<meta http-equiv='refresh' content='0; url=buku1.php'>";
-    } else {
+    
         $sql_peminjaman = "INSERT INTO peminjam(userid,bukuid,tanggalpeminjaman,tanggalpengembalian,statuspeminjaman) VALUES('$userid', '$bukuid', '$tanggalpeminjaman', '$tanggal_pengembalian_otomatis', '1')";
 
         if ($koneksi->query($sql_peminjaman) === TRUE) {
