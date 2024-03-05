@@ -72,8 +72,7 @@
                                             <input type="password" class="form-control form-control-user"
                                                 placeholder="Password" name="password" id="password"
                                                 aria-label="Recipient's username" aria-describedby="button-addon2">
-                                            <button class="btn btn-outline-secondary" type="button"
-                                                id="button-addon2"><i class="fa fa-eye"></i></button>
+                                            
                                         </div>
 
                                         <div class="form-group">
